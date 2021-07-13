@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Main from './Main.js';
-// import Stretch from './Stretch.js';
+import Stretch from './Stretch.js';
+import Lab02 from './Lab02.js';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Header />
     <Main />
-    {/* <Stretch /> */}
+    <Stretch />
+    <Lab02 />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
