@@ -25,11 +25,6 @@ let animalArray = [{
   "horns": 1
 }]
 
-// let beastArray = [];
-// for (let i=0; i < animalArray.length; i++) {
-//   beastArray.push(<HornedBeast title={i.title} image_src={i.image_url} description={i.description} />)
-// }
-
 class Stretch extends React.Component {
   render () {
     return(
