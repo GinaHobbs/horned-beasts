@@ -3,20 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './Header.js';
-import Footer from './Footer.js';
-import Main from './Main.js';
-import Stretch from './Stretch.js';
-import Lab02 from './Lab02.js';
+// import Header from './Header.js';
+// import Footer from './Footer.js';
+// import Main from './Main.js';
+// import Stretch from './Stretch.js';
+// import Lab02 from './Lab02.js';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Header />
-    <Main />
-    <Stretch />
-    <Lab02 />
-    <Footer />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
