@@ -4,12 +4,20 @@ import deer from './img/deer.jpeg';
 import rhino from './img/rhino.jpeg';
 
 class Main extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      selected: false
+    }
+  }
+
+
   render () {
     return (
-      <div>
-        <HornedBeast title={'Horned Beast 1'} image_src={deer} description={'this is a horned beast'}/>
-        <HornedBeast title={'Horned Beast 2'} image_src={rhino} description={'this is another horned beast'}/>
-      </div>
+      this.props.data.map(animal => {
+        return <HornedBeast modal_on={this.props.modal_on} title={animal.title} image_src={animal.image_url} image_title={animal.title} image_alt={animal.description} description={animal.description} />
+        }
+      )
     ) 
   }
 }
