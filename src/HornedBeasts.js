@@ -16,6 +16,7 @@ class HornedBeast extends React.Component {
       clicked: this.state.clicked + 1,
       favorite: true
     })
+    this.props.modal_on({image_src: this.props.image_src})
   }
 
   render () {
@@ -34,14 +35,6 @@ class HornedBeast extends React.Component {
         <p>{this.props.description}</p>
         <span>Favorited: {this.state.clicked} </span>
         {fav}
-        {/* {( () => 
-        {if (this.state.favorite === true) {
-          <span>Favorited</span>
-         } else {
-            <span>Not Favorited</span>
-         }
-        }
-         ) ()} */}
       </div>
     )
   }
