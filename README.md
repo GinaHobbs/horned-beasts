@@ -1,3 +1,6 @@
+# Netlify Link
+https://upbeat-tereshkova-54f3ae.netlify.app/
+
 Feature #1: Display images
 Why are we implementing this feature?
 As a user, I want to view the images on the page so that I can browse the photo collection.
@@ -91,12 +94,13 @@ Given that a user wants to view the details of the image
 When the user clicks on an individual image
 Then the image should render larger on the screen with the description displayed
 
-Number and name of feature: ________________________________
+Number and name of feature: 1 feature- Modal
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: unsure
 
-Start time: _____
+Start time: 3:00
 
-Finish time: _____
+Finish time: 7:40
 
-Actual time needed to complete: _____
+Actual time needed to complete: 4
+
