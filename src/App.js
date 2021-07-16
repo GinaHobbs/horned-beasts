@@ -52,15 +52,13 @@ class App extends React.Component {
         <Form>
           <Form.Group controlId="formController">
             <Form.Label>Horns</Form.Label>
-            <Form.Control type="text" placeholder="Enter number of horns" onInput={this.handleDropdown} />
-            {/* <Form.Select aria-label="Default select example">
+            <Form.Control as="select" onChange={this.handleDropdown}>
               <option>Open this select menu</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
-            </Form.Select> */}
+            </Form.Control>
           </Form.Group>
-
           <Button variant="primary" type="submit">
             Submit
           </Button>

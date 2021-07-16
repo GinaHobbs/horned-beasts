@@ -13,8 +13,6 @@ class Main extends React.Component {
 
 
   render () {
-    console.log(this.props.horn_num)
-
     return (
       this.props.data.map(animal => {
         if (this.props.horn_num == animal.horns) { 

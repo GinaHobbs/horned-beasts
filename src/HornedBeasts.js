@@ -1,6 +1,7 @@
 import React from 'react';
-import GreyHeart from './img/heart-grey.png'
-import RedHeart from './img/red-heart.png'
+import GreyHeart from './img/heart-grey.png';
+import RedHeart from './img/red-heart.png';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -30,12 +31,17 @@ class HornedBeast extends React.Component {
 
     return (
       <div>
-        <h2>{this.props.title}</h2>
-        <img src={this.props.image_src} alt={this.props.image_alt} title={this.props.image_title} onClick={this.click} width='200px'/>
-        <p>{this.props.description}</p>
-        <p>{this.props.horns}</p>
-        <span>Favorited: {this.state.clicked} </span>
-        {fav}
+        <Card style={{ width: '18rem' }} onClick={this.click}>
+          <Card.Img variant="top" src={this.props.image_src} />
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+            <Card.Text>
+              <p>{this.props.description}</p>
+              <p>Number of horns: {this.props.horns}</p>
+              <p>Favorited: {fav} {this.state.clicked} </p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
     )
   }
