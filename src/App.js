@@ -18,7 +18,7 @@ class App extends React.Component {
     this.state = {
       display_modal: false,
       image_src: '',
-      horns: ''
+      horns_num: ''
     }
   }
 
@@ -41,7 +41,7 @@ class App extends React.Component {
 
   handleDropdown = e => {
     this.setState({
-      horns: e.target.value
+      horn_num: e.target.value
     })
   }
 
@@ -65,7 +65,7 @@ class App extends React.Component {
             Submit
           </Button>
         </Form>
-        <Main data={data} modal_on={this.modal_on}/>
+        <Main data={data} modal_on={this.modal_on} horn_num={this.state.horn_num}/>
         <SelectedBeast modal_on={this.state.display_modal} modal_off={this.modal_off} image_src={this.state.image_src}/>
         <Footer />
       </div>
