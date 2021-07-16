@@ -33,6 +33,7 @@ class HornedBeast extends React.Component {
         <h2>{this.props.title}</h2>
         <img src={this.props.image_src} alt={this.props.image_alt} title={this.props.image_title} onClick={this.click} width='200px'/>
         <p>{this.props.description}</p>
+        <p>{this.props.horns}</p>
         <span>Favorited: {this.state.clicked} </span>
         {fav}
       </div>
