@@ -104,3 +104,11 @@ Finish time: 7:40
 
 Actual time needed to complete: 4
 
+# Lab 04
+## Feature 1. Filter by Numbers of Horns
+### Why are we implementing this feature?
+As a user, I want to be able to view the beasts by the number of horns
+### What are we going to implement?
+Given that a user is presented with filtering options
+When the user clicks on one option
+Then the images should be filtered accordingly
